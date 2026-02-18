@@ -1,82 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html Moderno - Introducción</title>
+    <title>HTML Moderno - Introdución</title>
 </head>
 <body>
-    <!-- Usar figcaption cuando la imagen necesita contexto -->
+    <!-- USar figcaption cuando la imagen necesita contexto -->
     <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" alt="Imagen de prueba" width="100%">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.Tj-2Ax_NCBY1eRcp-ybesAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagen de prueba" width="100%">
         <figcaption>
-            Figura 1: Fotografia de prueba
+            Figura 1: Fotografía de prueba
         </figcaption>
     </figure>
-
-    <!-- Utiliza principalmente para imagenes reponsivas - Permite definir distitan versiones segun el tamaño de la pantalla -->
+    <!-- Utiliza para imagenes responsivas - Permite definir distintas  -->
     <picture>
-        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200" media="(min-width: 768px)">
-        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600" media="(max-width: 767px)">
+        <source srcset="https://tse3.mm.bing.net/th/id/OIP.Tj-2Ax_NCBY1eRcp-ybesAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" media="(min-width: 768px)">
+        <source srcset="https://cdn0.geoenciclopedia.com/es/posts/8/0/0/montanas_8_orig.jpg" media="(max-width: 767px)">
 
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600" alt="Imagen de prueba con source">
-    </picture>
-    
-    <!-- SVG es un vectorial (independientemente del tamaño nunca se pixea) -->
+        <img src="https://www.xtrafondos.com/wallpapers/montana-en-la-naturaleza-canada-10154.jpg" alt="imagen de prueba con source">
+    </picture><br>
+    <!-- SVG es un vectorial - independependientemente del tamaño nunca se pixea -->
     <svg>
-        <circle cx="60" cy="60" r="50" stroke="black" stroke-width="9" fill="lightblue" ></circle>
-    </svg>
-
-    <!-- datalist : listra una lista de sugerencias , te da ciertos valors que puedes poner en el input -->
-     <label>
-        Lenguaje Favorito
+        <circle cx="60" cy="60" r="50" stroke="black" stroke-width="2" fill="lightblue"></circle>
+    </svg><br>
+    <label>
+        Lenguaje favorito
         <input list="languages">
-     </label>
-
-     <datalist id="languages">
+    </label>
+    <datalist id="languages">
         <option value="Java"></option>
         <option value="JavaScript"></option>
         <option value="Python"></option>
         <option value="C#"></option>
-     </datalist>
-
-     <!-- Contenido desplegable -->
+    </datalist>
+    <!-- Contenido desplegable -->
      <details>
-        <summary>¿Qué es HTML semántico?</summary>
+        <summary>¿Que es HTML semantico?</summary>
         <p>
-            Es el uso de etiquetas que describen el significado del contenido y no solo su apariencia
+            Es el uso de etiquetas que despliegan el significado del contenido <br> y no solo su apariencia
         </p>
      </details>
-
-     <!-- Sirve para cargar videos -->
-     <video controls autoplay muted loop poster="">
+     <video autoplay muted loop poster="">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-
         <track kind="subtitles"></track>
-     </video>
-
-     <audio src="https://www.w3schools.com/html/horse.mp3" controls>
-
-     </audio>
-
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/3nYLTiY5skU" frameborder="0"></iframe>
-     <br>
-     
-     <button onclick="abrirModal()">Abrir mensjae</button>
-
+     </video><br>
+     <audio src="https://www.w3schools.com/html/horse.mp3" controls></audio><br>
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=oggpIa9JOgvMS49M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+     <button onclick="abrirModal()">Abrir</button>
      <dialog id="miDialogo">
         <p>Este es un dialogo HTML nativo</p>
-        <button onclick="cerrarModal()">Cerar</button>
+        <button onclick="cerrarModal()">Cerrar</button>
      </dialog>
-
-     <script>
-        function abrirModal(){
-            document.getElementById('miDialogo').showModal();
-        }
-
-        function cerrarModal(){
-            document.getElementById('miDialogo').close();
-        }
-     </script>
-</body>
 </html>
