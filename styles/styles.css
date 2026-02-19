@@ -1,0 +1,153 @@
+
+@import url('./globals.css');
+
+body{
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6;
+}
+
+nav{
+    height: 13vh;           
+    max-height: 100px;      
+    padding: 10px;
+}
+
+
+nav .logo{
+    margin-right: 50px;
+}
+
+nav .logo img{
+     height: 70px;
+     max-height: 100%;
+}
+
+nav a{
+    font-family: "Alan Sans", sans-serif;
+    color:  var(--nav-links);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--highlight);
+}
+
+
+nav ul{
+    display: inline;
+}
+
+/* Elementos de la lista */
+nav li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
+}
+
+
+header{
+    position: relative; 
+}
+
+header img{
+    z-index: 1;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: top;
+}
+.principal img{
+    height: 85vh;
+    object-position: center;
+}
+
+header h1{
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    font-family: "Alan Sans", sans-serif;
+    width: 60%;
+    font-size: 4rem;
+}
+
+header span{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--highlight);
+}
+
+#news{
+    margin-top: 30px;
+    padding: 20px;
+    display: inline;
+}
+
+
+article{
+    width: 30%;
+    min-width: 270px;
+    padding: 10px;
+}
+
+
+article img{
+    margin: auto;
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    display: block;
+    object-position: top;
+}
+
+article h3{
+    color: var(--highlight);
+    font-family: "Alan Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+article p{ 
+    width: 90%;
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.plans{
+    width: 80%;
+    display: block;
+    margin:auto;
+}
+
+.plan{
+    width: 30%;
+}
+
+.price{
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--highlight);
+}
+
+.frecuency{
+    margin-left: 10px;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+}
