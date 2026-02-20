@@ -1,0 +1,21 @@
+@import url('./global.css');
+
+body{
+    background-color: var(--bg-color-dark);
+    color:var(--text-color-dark);
+    font-family: "Quicksand";
+    line-height: 1.6;
+}
+
+nav{
+    height: 13vh;
+    max-height: 200px;
+    padding: 10px;
+}
+.logo{
+    padding: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
