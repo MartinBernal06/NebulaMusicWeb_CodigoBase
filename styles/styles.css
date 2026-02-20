@@ -1,6 +1,10 @@
 
 @import url('./globals.css');
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
@@ -151,3 +155,174 @@ footer{
     text-align: center;
     padding-bottom: 30px;
 }
+
+
+.auth-container{
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.auth-card{
+    background-color: #1c1a05;
+    width: 90%;
+    padding: 40px 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+.form-logo{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.form-header h3{
+    font-family: "Alan Sans", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.form-subtitle{
+    font-size: 1rem;
+    color: var(--links-hover-dark);
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="date"]{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #2a280a;
+    color: var(--text-color-dark);
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--highlight);
+}
+
+input:required{
+    border-left: 4px solid var(--nav-links);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary{
+    background-color: var(--nav-links);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover{
+    background-color: var(--highlight);
+    color: #000000;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid var(--links-hover-dark);
+    color: var(--links-hover-dark);
+}
+
+.btn-secondary:hover{
+    background-color: var(--links-hover-dark);
+    color: #000000;
+}
+
+/* Contenedor de los radios */
+.radio-group{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;           /* espacio entre opciones */
+    flex-wrap: wrap;     /* evita que se rompa en móvil */
+    align-items: center;
+}
+
+/* Radio moderno */
+.radio-group input[type="radio"]{
+    accent-color: var(--highlight); /* color principal */
+    cursor: pointer;
+    transform: scale(1.1); /* ligeramente más grande */
+}
+
+/* Labels de radio */
+.radio-group label{
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover visual */
+.radio-group label:hover{
+    color: var(--highlight);
+}
+
+
+/* =========================
+   SELECT (Cuenta)
+   ========================= */
+
+select{
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #2a280a;
+    color: var(--text-color-dark);
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Focus consistente con tus inputs */
+select:focus{
+    outline: none;
+    border: 1px solid var(--highlight);
+    box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+}
+
+/* apartir de 768px vas a aplicar estos estilos */
+@media (min-width: 768px){
+    .auth-container{
+        padding-top: 80px;
+    }
+
+    .auth-card{
+        max-width: 600px;
+    }
+
+}
+
+
+
+
